@@ -4,7 +4,7 @@
 
 set -e
 
-manocli=~/$USER/mano-cli
+manocli=mano-cli
 
 function getBlockNumber() {
   $manocli getinfo | grep blocks | sed "s/.*: \([0-9]\+\).*/\1/"
